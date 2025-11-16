@@ -55,7 +55,7 @@ body{
 .navbar__s2{
   border: solid black 1px;
   border-radius: 50px;
-  width: 30%;
+  width: 20%;
   padding: 15px; 
   display: flex;
   flex-grow: 3;
