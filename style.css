@@ -23,6 +23,7 @@ body{
 .navbar__s1{
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 2;
   justify-content: center;
   flex-direction: row;
   align-items: center;
@@ -134,7 +135,7 @@ body{
   flex-wrap: wrap;
   gap: 10px;
   flex-grow: 1;
-  flex-basis: 100px;
+  flex-basis: 50px;
   justify-content: space-around;
   padding: 20px;
   border-bottom: solid black 1px;
