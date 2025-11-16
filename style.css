@@ -12,6 +12,7 @@ body{
 .navbar{
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
@@ -37,12 +38,12 @@ body{
   color: grey;
   font-size: 14px;
   cursor: pointer;
+  padding: 10px;
 }
 
 .navbar__s1__desc:hover{
   background-color: #EDE5F9;
   color: #A435F0;
-  padding: 10px;
 }
 
 .navbar__s1__title{
@@ -56,6 +57,7 @@ body{
   width: 30%;
   padding: 15px; 
   display: flex;
+  flex-grow: 1;
   flex-direction: row;
   align-items: center;
   gap: 10px;
@@ -73,6 +75,8 @@ body{
 
 .navbar__s3{
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: center;
   flex-direction: row;
   align-items: center;
@@ -107,7 +111,6 @@ body{
 
 .navbar__s3 i{
   cursor: pointer;
-  flex-grow: 1;
 }
 
 .navbar__s3__login:hover,.navbar__s3__signup:hover{
@@ -118,12 +121,12 @@ body{
   color: grey;
   font-size: 14px;
   cursor: pointer;
+  padding:10px;
 }
 
 .navbar__s3__desc:hover{
   background-color: #EDE5F9;
   color: #A435F0;
-  padding: 10px;
 }
 
 .categories{
