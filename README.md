@@ -31,12 +31,6 @@ udemy-clone/
 │     └── ...
 └── README.md
 
-📸 Preview
-
-(Add your screenshots here)
-
-![Homepage Screenshot](images/screenshot-home.png)
-
 🛠️ Technologies Used
 
 HTML5 – Structure
@@ -51,7 +45,7 @@ CSS3 – Styling & Responsive Layout
 
 Clone the repository:
 
-git clone https://github.com/yourusername/udemy-clone.git
+git clone https://renganathan-code.github.io/Udemy-website-clone/
 
 
 Open the project folder:
