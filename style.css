@@ -10,6 +10,7 @@ body{
 }
 
 .navbar{
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 2;
@@ -18,6 +19,9 @@ body{
   align-items: center;
   padding: 20px;
   box-shadow: 0 5px 10px rgba(0,0,0,5) ;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .navbar__s1{
@@ -68,6 +72,7 @@ body{
   border: none;
   font-size: 16px;
   width: 100%;
+  background-color: transparent;
 }
 
 .navbar__s2 input:focus{
@@ -118,16 +123,40 @@ body{
   transform: scale(1.05);
 }
 
-.navbar__s3__desc{
+.navbar__s3__d1,.navbar__s3__d2{
   color: grey;
   font-size: 14px;
   cursor: pointer;
   padding:10px;
+  position: relative;
 }
 
-.navbar__s3__desc:hover{
+.navbar__s3__d1:hover{
   background-color: #EDE5F9;
   color: #A435F0;
+}
+
+.navbar__s3__d2:hover{
+  background-color: #EDE5F9;
+  color: #A435F0;
+}
+
+/*teach popup*/
+.teach__popup{
+  position: absolute;
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+  width: 200%;
+  padding: 20px;
+  right: 0;
+  top: 150%;
+  display: none;
+  font-size: 16px;
+}
+
+.navbar__s3__d2:hover .teach__popup{
+  display: block;
 }
 
 .categories{
@@ -161,6 +190,21 @@ body{
 
 .sale-image img{
   width: 100%;
+}
+
+.sale-image{
+  position: relative;
+}
+
+.sale-image__offer{
+  background-color:white;
+  border: black solid 2px;
+  width: 30%;
+  padding: 20px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  cursor: pointer;
 }
 
 .recommended{
