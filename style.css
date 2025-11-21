@@ -18,7 +18,7 @@ body{
   flex-direction: row;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 5px 10px rgba(0,0,0,5) ;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -57,9 +57,9 @@ body{
 }
 
 .navbar__s2{
-  border: solid black 1px;
+  border: solid gray 1px;
   border-radius: 50px;
-  width: 20%;
+  width: 35%;
   padding: 15px; 
   display: flex;
   flex-grow: 5;
@@ -86,7 +86,7 @@ body{
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .navbar__s3__login{
@@ -123,7 +123,7 @@ body{
   transform: scale(1.05);
 }
 
-.navbar__s3__d1,.navbar__s3__d2{
+.navbar__s3__d1,.navbar__s3__d2,.navbar__s3__d3{
   color: grey;
   font-size: 14px;
   cursor: pointer;
@@ -131,12 +131,7 @@ body{
   position: relative;
 }
 
-.navbar__s3__d1:hover{
-  background-color: #EDE5F9;
-  color: #A435F0;
-}
-
-.navbar__s3__d2:hover{
+.navbar__s3__d1:hover,.navbar__s3__d2:hover,.navbar__s3__d3:hover{
   background-color: #EDE5F9;
   color: #A435F0;
 }
@@ -155,8 +150,20 @@ body{
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-.navbar__s3__d2:hover .teach__popup{
+.navbar__s3__d3:hover .teach__popup{
   display: block;
+}
+
+.navbar__s4{
+  display: none;
+}
+
+.navbar__s5{
+  display: none;
+}
+
+.navbar__s5 i{
+  padding: 5px;
 }
 
 .categories{
@@ -195,6 +202,14 @@ body{
 
 .sale-image{
   position: relative;
+}
+
+.sale-image__2{
+  display: none;
+}
+
+.sale-image__2 img{
+  width: 100%;
 }
 
 .sale-image__offer{
@@ -243,7 +258,7 @@ body{
   width: 300px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,3) ;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: pointer;
   text-align: center;
 }
@@ -321,12 +336,51 @@ body{
   margin-top: 20px;
 }
 
-.footer{
-  background-color: #202230;
-  padding-top: 3%;
+.skills{
+  background-color: #2A2B3F;
+  color: white;
 }
 
-.footer__one h4{
+.skills__title{
+  border-bottom: solid grey 1px;
+  padding: 40px;
+}
+
+.skills__desc{
+  padding: 35px;
+}
+
+.skills__one{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills__s1,.skills__s2,.skills__s3,.skills__s4,.skills__s5,.skills__s6,.skills__s7,.skills__s8{
+  flex-grow: 1;
+  flex-basis: 20%;
+  padding: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.skills__s1 p,.skills__s2 p,.skills__s3 p,.skills__s4 p,.skills__s5 p,.skills__s6 p,.skills__s7 p,.skills__s8 p{
+  padding: 5px;
+  color: grey;
+  font-size: 14px;
+}
+
+.skills__s1 h5,.skills__s2 h5,.skills__s3 h5,.skills__s4 h5,.skills__s5 h5,.skills__s6 h5,.skills__s7 h5,.skills__s8 h5{
+  padding-bottom: 10px;
+}
+
+.footer{
+  background-color: #202230;
+  padding-top: 2%;
+}
+
+.footer__one h5{
   color: white;
   padding-bottom: 5px;
 }
@@ -340,7 +394,11 @@ body{
 }
 
 .footer__one__s1,.footer__one__s2,.footer__one__s3,.footer__one__s4{
-  flex-wrap: 1;
+  padding-bottom: 1%;
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin-left: 30px;
+  padding: 15px;
 }
 
 .footer__one p{
@@ -377,4 +435,93 @@ body{
 
 .footer__two p:hover{
   color: #A435F0;
+}
+
+.footer__three{
+  display: none;
+  color: white;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width:800px) {
+  body{
+    font-size: 14px;
+  }
+
+  .skills{
+    display: none;
+  }
+
+  .footer__one__s1,.footer__one__s2,.footer__one__s3,.footer__one__s4{
+    flex-grow: 1;
+    flex-basis: 40%;
+  }
+
+  .sale-image__offer{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width:600px) {
+  .categories{
+    display: none;
+  }
+
+  .sale-image{
+    display: none;
+  }
+
+  .sale-image__2{
+    display: block;
+  }
+
+  .navbar__s3{
+    display: none;
+  }
+
+  .navbar__s4{
+    display: block;
+    position: absolute;
+  }
+
+  .navbar__s5{
+    display: block;
+  }
+
+  .navbar__s1__desc,.navbar__s2{
+    display: none;
+  }
+
+  .navbar{
+    padding: 10px;
+    position: static;
+  }
+
+  .footer__one{
+    display: block;
+  }
+
+  .footer__one__s1,.footer__one__s2,.footer__one__s3,.footer__one__s4{
+    margin: 20px;
+  }
+
+  .footer__two{
+    display: none;
+  }
+
+  .footer__three{
+    display: block;
+  }
+
+  .footer__three p{
+    padding: 20px;
+  }
+
 }
